@@ -1,0 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Jost:ital,wght@0,100..900;1,100..900&family=Lexend+Deca:wght@100..900&family=Play:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+.hero-caption {
+  padding-top: 17em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+.city-park {
+  color: #007bff !important;
+}
+
+.top {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  margin-bottom: 0.4em;
+}
+
+.mid {
+  font-family: "Playfair Display", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  margin-bottom: 1.4em;
+  letter-spacing: 0.02em;
+}
+
+.bottom {
+  font-family: "Play", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.05em;
+}
+
+.offer-title {
+  font-family: "Rubik", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.offer-desc {
+  font-family: "Play", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.offer-car-title {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.offer-nav {
+  font-family: "Lexend Deca", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
