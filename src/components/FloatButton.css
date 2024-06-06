@@ -44,11 +44,10 @@
 
 .floatingButton:hover {
   border: 5px solid #b2bedc;
-  line-height: 55px;
 }
 
-.floatingButton .fa {
-  font-size: 15px !important;
+.floatingButton:hover .fa {
+  margin-top: -1.3em !important;
 }
 
 .floatingButton.open,
@@ -102,4 +101,10 @@
 .floatingMenu li a:hover {
   margin-right: 10px;
   text-decoration: none;
+}
+
+.floatingButton .fa {
+  font-size: 1.8em !important;
+  margin-top: 0.55em !important;
+  transition: 0.7s !important;
 }

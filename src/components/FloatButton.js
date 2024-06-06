@@ -69,13 +69,19 @@ function FloatButton() {
       <div className="floatingButtonWrap">
         <div className="floatingButtonInner">
           <a href="#" className="floatingButton">
-            <i className="fa fa-plus icon-default" />
+            <i className="fa fa-solid fa-phone" />
           </a>
           <ul className="floatingMenu">
             <li>
-              <a href="#" onClick={handlePlayMusicClick}>
-                {isPlaying ? "Pause Music" : "Play Music"} &nbsp;
-                <i className="fa-solid fa fa-music"></i>
+              <a href="https://wa.me/+6281318833544" target="_blank">
+                Hubungi 0813-1883-3544 (Afri) &nbsp;
+                <i className="fa-solid fa fa-whatsapp"></i>
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                Hubungi 0813-1779-6129 (Lena) &nbsp;
+                <i className="fa-solid fa fa-whatsapp"></i>
               </a>
             </li>
           </ul>
