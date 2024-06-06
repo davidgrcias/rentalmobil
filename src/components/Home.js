@@ -20,9 +20,8 @@ function Home() {
                 {/* Text */}
                 <p className="lead mb-12 mid">
                   Selamat datang di situs Rental Mobil City Park! Kami
-                  menyediakan jasa rental mobil murah lepas kunci dan dengan
-                  sopir harian, mingguan, dan bulanan, dengan harga mulai dari
-                  Rp 300.000 saja.
+                  menyediakan jasa rental mobil murah lepas kunci dengan harga
+                  mulai dari Rp 345.000 saja.
                 </p>
                 {/* Form */}
 
@@ -42,15 +41,15 @@ function Home() {
         <div className="container">
           <div className="row">
             <div className="col-lg-3">
-              <h3 className="offer-title">Penawaran Kami</h3>
+              <h3 className="offer-title">Mobil Kami</h3>
               <p className="mb-4 offer-desc">
-                Harga mobil belum termasuk bensin dan tol. <br />
-                Dapatkan diskon Rp 20k/hari untuk setiap hari selanjutnya jika
-                lebih dari 3 hari!
+                Harga mobil belum termasuk bensin, tol, dan parkir. <br />
+                Dapatkan diskon Rp20k/hari untuk setiap hari selanjutnya jika
+                lebih dari 5 hari dalam sekali sewa!
               </p>
               <p>
                 <a href="#" className="btn btn-primary custom-prev offer-nav">
-                  Previous
+                  Prev
                 </a>
                 <span className="mx-2">/</span>
                 <a href="#" className="btn btn-primary custom-next offer-nav">
@@ -77,7 +76,10 @@ function Home() {
                       </h3>
 
                       <div className="rent-price">
-                        <span>Rp 420k/</span>hari
+                        <span>Rp420k/</span>hari (JaBoDeTaBek)
+                      </div>
+                      <div className="rent-price">
+                        <span>Rp495k/</span>hari (Luar JaBoDeTaBek)
                       </div>
                     </div>
                     <ul className="specs">
@@ -91,7 +93,7 @@ function Home() {
                       </li>
                       <li>
                         <span>CC</span>
-                        <span className="spec">1500 CC</span>
+                        <span className="spec">1000 CC Turbo</span>
                       </li>
                       <li>
                         <span>AC</span>
@@ -108,6 +110,14 @@ function Home() {
                     </ul>
                     <div className="d-flex action">
                       <a
+                        href="https://www.youtube.com/watch?v=BFS9n4B_2xA"
+                        className="btn btn-primary offer-nav"
+                        target="_blank"
+                      >
+                        <i class="fa fa-play" aria-hidden="true"></i> Video
+                      </a>{" "}
+                      &nbsp;&nbsp;
+                      <a
                         href="contact.html"
                         className="btn btn-primary offer-nav"
                       >
@@ -120,7 +130,7 @@ function Home() {
                 <div className="item-1">
                   <a href="#">
                     <img
-                      src="images/img_2.jpg"
+                      src="/assets/img/toyotaavanza.png"
                       alt="Image"
                       className="img-fluid"
                     />
@@ -134,7 +144,10 @@ function Home() {
                       </h3>
 
                       <div className="rent-price">
-                        <span>Rp 310k/</span>hari
+                        <span>Rp345k/</span>hari (JaBoDeTaBek)
+                      </div>
+                      <div className="rent-price">
+                        <span>Rp425k/</span>hari (Luar JaBoDeTaBek)
                       </div>
                     </div>
                     <ul className="specs">
@@ -148,7 +161,7 @@ function Home() {
                       </li>
                       <li>
                         <span>CC</span>
-                        <span className="spec">1500 CC</span>
+                        <span className="spec">1300 CC</span>
                       </li>
                       <li>
                         <span>AC</span>
@@ -164,6 +177,14 @@ function Home() {
                       </li>
                     </ul>
                     <div className="d-flex action">
+                      <a
+                        href="https://www.youtube.com/watch?v=BFS9n4B_2xA"
+                        target="_blank"
+                        className="btn btn-primary offer-nav"
+                      >
+                        <i class="fa fa-play" aria-hidden="true"></i> Video
+                      </a>{" "}
+                      &nbsp;&nbsp;
                       <a
                         href="contact.html"
                         className="btn btn-primary offer-nav"
@@ -183,11 +204,16 @@ function Home() {
       <div className="site-section pt-0 pb-0 bg-light">
         <div className="container">
           <div className="row">
-            <div className="col-12">
+            <div className="col-12 hitung-biaya">
               <form className="trip-form">
                 <div className="row align-items-center mb-4">
                   <div className="col-md-6">
-                    <h3 className="m-0">Hitung perkiraan total biaya</h3>
+                    <h3 className="m-0">
+                      Hitung Total Biaya : Rp
+                      <span className="total-biaya" id="total-biaya">
+                        0
+                      </span>
+                    </h3>
                   </div>
                   <div className="col-md-6 text-md-right">
                     <span className="text-primary">2</span>{" "}
@@ -201,22 +227,22 @@ function Home() {
                       id="cf-1"
                       placeholder="Jenis Mobil"
                       className="form-control"
+                      name="jenismobil"
                     >
                       <option value="raize">Raize</option>
                       <option value="raize">Avanza</option>
                     </select>
                   </div>
                   <div className="form-group col-md-3">
-                    <label htmlFor="cf-1">Fasilitas</label>
+                    <label htmlFor="cf-1">Tujuan</label>
                     <select
                       id="cf-1"
                       placeholder="Fasilitas"
                       className="form-control"
+                      name="fasilitas"
                     >
-                      <option value="lepaskunci">
-                        Lepas kunci (direkomendasikan)
-                      </option>
-                      <option value="dengansopir">Dengan sopir</option>
+                      <option value="dengansopir">Hanya JaBoDeTaBek</option>
+                      <option value="lepaskunci">Luar JaBoDeTaBek</option>
                     </select>
                   </div>
                   <div className="form-group col-md-3">
@@ -239,13 +265,68 @@ function Home() {
                   </div>
                 </div>
                 <div className="row">
-                  <div className="col-lg-6">
-                    <button className="btn btn-primary" type="button">
-                      Hitung
-                    </button>
-                  </div>
+                  <div className="col-lg-6"></div>
                 </div>
               </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div
+        className="site-section section-3"
+        style={{ backgroundImage: 'url("images/hero_2.jpg")' }}
+      >
+        <div className="container">
+          <div className="row ">
+            <div className="col-12 text-center mb-5 ">
+              <h2 className="text-white">
+                Mengapa Harus Menggunakan Jasa Kami?
+              </h2>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-lg-4">
+              <div className="service-1">
+                <span className="service-1-icon">
+                  <span className="flaticon-car-1" />
+                </span>
+                <div className="service-1-contents">
+                  <h3>STNK</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Obcaecati, laboriosam.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4">
+              <div className="service-1">
+                <span className="service-1-icon">
+                  <span className="flaticon-traffic" />
+                </span>
+                <div className="service-1-contents">
+                  <h3>Kartu Flazz</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Obcaecati, laboriosam.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4">
+              <div className="service-1">
+                <span className="service-1-icon">
+                  <span className="flaticon-valet" />
+                </span>
+                <div className="service-1-contents">
+                  <h3>Kunci Mobil</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Obcaecati, laboriosam.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>

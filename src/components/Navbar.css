@@ -6,3 +6,30 @@
   font-weight: 700;
   font-style: normal;
 }
+
+.padding-top {
+  padding-top: 2em !important;
+}
+
+.floating-logo {
+  animation: MoveUpDown 3s linear infinite;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+@keyframes MoveUpDown {
+  0%,
+  100% {
+    bottom: -46px;
+  }
+  50% {
+    bottom: -56px;
+  }
+  75% {
+    left: 5px;
+  }
+  25% {
+    left: -5px;
+  }
+}

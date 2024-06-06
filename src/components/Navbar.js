@@ -21,6 +21,7 @@ function Navbar() {
                 <div className="site-logo">
                   <NavLink className="navbar-brand" to="/">
                     <img
+                      className="floating-logo"
                       src="/assets/img/logo.png"
                       style={{
                         height: "5.2em",
@@ -30,7 +31,7 @@ function Navbar() {
                   </NavLink>
                 </div>
               </div>
-              <div className="col-9  text-right">
+              <div className="col-9 text-right padding-top">
                 <span className="d-inline-block d-lg-none">
                   <a
                     href="#"
@@ -51,27 +52,22 @@ function Navbar() {
                     </li>
                     <li>
                       <a href="services.html" className="nav-link">
-                        Services
+                        Mobil
                       </a>
                     </li>
                     <li>
                       <a href="cars.html" className="nav-link">
-                        Cars
+                        Biaya
                       </a>
                     </li>
                     <li>
                       <a href="about.html" className="nav-link">
-                        About
-                      </a>
-                    </li>
-                    <li>
-                      <a href="blog.html" className="nav-link">
-                        Blog
+                        Mengapa?
                       </a>
                     </li>
                     <li>
                       <a href="contact.html" className="nav-link">
-                        Contact
+                        Kontak
                       </a>
                     </li>
                   </ul>

@@ -1,7 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Jost:ital,wght@0,100..900;1,100..900&family=Lexend+Deca:wght@100..900&family=Play:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
+.ftco-cover-1 {
+  min-height: 100% !important;
+}
+
 .hero-caption {
-  padding-top: 17em;
+  padding-top: 16.4em;
   padding-left: 1em;
   padding-right: 1em;
 }
@@ -25,6 +29,7 @@
   font-style: normal;
   margin-bottom: 1.4em;
   letter-spacing: 0.02em;
+  font-size: 1.5em;
 }
 
 .bottom {
@@ -45,6 +50,7 @@
   font-family: "Play", sans-serif;
   font-weight: 300;
   font-style: normal;
+  font-size: 1.1em !important;
 }
 
 .offer-car-title {
@@ -59,4 +65,48 @@
   font-optical-sizing: auto;
   font-weight: 500;
   font-style: normal;
+}
+
+.item-1-contents {
+  transition: 0.7s;
+}
+
+.item-1-contents:hover {
+  background-color: #007bff !important;
+}
+
+.item-1-contents:hover .offer-car-title,
+.item-1-contents:hover .rent-price,
+.item-1-contents:hover .specs,
+.item-1-contents:hover .offer-nav {
+  color: white !important;
+}
+
+.item-1-contents .offer-car-title,
+.item-1-contents .rent-price,
+.item-1-contents .specs,
+.item-1-contents .offer-nav {
+  transition: 0.7s !important;
+}
+
+.specs {
+  margin-top: 1em !important;
+}
+
+.owl-nav {
+  display: none !important;
+}
+
+.hitung-biaya {
+  margin-bottom: 3em !important;
+}
+
+.fasilitas {
+  margin-top: 5em !important;
+}
+
+@media (max-width: 990px) {
+  .hitung-biaya {
+    margin-top: 5em !important;
+  }
 }
