@@ -1,0 +1,15 @@
+.footer-heading {
+  font-size: 3em !important;
+  margin-bottom: 0.6em !important;
+}
+
+.footer-contact p,
+.footer-contact a,
+.footer-contact i,
+.footer-contact svg {
+  font-size: 1.2em !important;
+}
+
+.footer-contact-email {
+  color: #fff !important;
+}

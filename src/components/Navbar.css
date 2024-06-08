@@ -18,6 +18,14 @@
   bottom: 0;
 }
 
+.site-menu li a.nav-link {
+  transition: 0.3s !important;
+}
+
+.site-menu li a.nav-link:hover {
+  color: #007bff !important;
+}
+
 @keyframes MoveUpDown {
   0%,
   100% {

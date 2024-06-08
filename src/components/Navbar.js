@@ -46,27 +46,27 @@ function Navbar() {
                 >
                   <ul className="site-menu main-menu js-clone-nav ml-auto ">
                     <li className="active">
-                      <a href="index.html" className="nav-link">
+                      <a href="/" className="nav-link">
                         Home
                       </a>
                     </li>
                     <li>
-                      <a href="services.html" className="nav-link">
+                      <a href="#mobil" className="nav-link">
                         Mobil
                       </a>
                     </li>
                     <li>
-                      <a href="cars.html" className="nav-link">
+                      <a href="#biaya" className="nav-link">
                         Biaya
                       </a>
                     </li>
                     <li>
-                      <a href="about.html" className="nav-link">
+                      <a href="#mengapa" className="nav-link">
                         Mengapa?
                       </a>
                     </li>
                     <li>
-                      <a href="contact.html" className="nav-link">
+                      <a href="#kontak" className="nav-link">
                         Kontak
                       </a>
                     </li>
