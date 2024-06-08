@@ -82,6 +82,10 @@
   color: white !important;
 }
 
+.item-1-contents:hover .offer-nav {
+  border-color: white !important;
+}
+
 .item-1-contents .offer-car-title,
 .item-1-contents .rent-price,
 .item-1-contents .specs,
@@ -101,12 +105,34 @@
   margin-bottom: 3em !important;
 }
 
+.hitung-biaya h3 {
+  font-size: 1.6em !important;
+}
+
 .fasilitas {
   margin-top: 5em !important;
+}
+
+.keterangan-biaya {
+  display: block !important;
+  margin-top: 0.9em !important;
+  margin-bottom: 0em !important;
+  padding-bottom: 0em !important;
+}
+
+@media (max-width: 766px) {
+  #unduh-bukti-parent {
+    margin-top: 1em !important;
+  }
 }
 
 @media (max-width: 990px) {
   .hitung-biaya {
     margin-top: 5em !important;
   }
+}
+
+#kontak {
+  padding-bottom: 1em !important;
+  padding-top: 4.5em !important;
 }

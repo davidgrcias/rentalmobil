@@ -1,0 +1,21 @@
+.card {
+  margin-top: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+  background-color: #007bff;
+  color: white;
+}
+
+.card-body ul {
+  padding-left: 20px;
+}
+
+.card-body ul li {
+  margin-bottom: 10px;
+}
+
+.text-white-custom h4 {
+  color: white !important;
+}

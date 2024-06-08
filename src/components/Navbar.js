@@ -45,28 +45,33 @@ function Navbar() {
                   role="navigation"
                 >
                   <ul className="site-menu main-menu js-clone-nav ml-auto ">
-                    <li className="active">
-                      <a href="/" className="nav-link">
+                    <li activeClassName="active">
+                      <NavLink to="/" className="nav-link">
                         Home
-                      </a>
+                      </NavLink>
                     </li>
-                    <li>
-                      <a href="#mobil" className="nav-link">
+                    <li activeClassName="active">
+                      <a href="/#mobil" className="nav-link">
                         Mobil
                       </a>
                     </li>
-                    <li>
-                      <a href="#biaya" className="nav-link">
+                    <li activeClassName="active">
+                      <a href="/#biaya" className="nav-link">
                         Biaya
                       </a>
                     </li>
-                    <li>
-                      <a href="#mengapa" className="nav-link">
+                    <li activeClassName="active">
+                      <a href="/#mengapa" className="nav-link">
                         Mengapa?
                       </a>
                     </li>
-                    <li>
-                      <a href="#kontak" className="nav-link">
+                    <li activeClassName="active">
+                      <a href="/#kebijakan" className="nav-link">
+                        Kebijakan
+                      </a>
+                    </li>
+                    <li activeClassName="active">
+                      <a href="/#kontak" className="nav-link">
                         Kontak
                       </a>
                     </li>

@@ -1,7 +1,98 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import html2canvas from "html2canvas";
 import "./Home.css";
+import emailjs from "emailjs-com";
+import Kebijakan from "./Kebijakan";
 
 function Home() {
+  const [jenismobil, setJenisMobil] = useState("raize");
+  const [tujuan, setTujuan] = useState("hanyajabodetabek");
+  const [tanggalMulai, setTanggalMulai] = useState("");
+  const [tanggalKembali, setTanggalKembali] = useState("");
+  const [totalBiaya, setTotalBiaya] = useState(0);
+
+  const [nama, setNama] = useState("");
+  const [email, setEmail] = useState("");
+  const [nomortelepon, setNomorTelepon] = useState("");
+  const [pesan, setPesan] = useState("");
+
+  useEffect(() => {
+    if (tanggalMulai && tanggalKembali) {
+      const startDate = new Date(tanggalMulai);
+      const endDate = new Date(tanggalKembali);
+      const timeDiff = endDate - startDate;
+      const daysDiff = Math.ceil(timeDiff / (1000 * 3600 * 24));
+
+      let biayaPerHari = 0;
+      switch (jenismobil) {
+        case "raize":
+          biayaPerHari = tujuan === "hanyajabodetabek" ? 420000 : 495000;
+          break;
+        case "avanza":
+          biayaPerHari = tujuan === "hanyajabodetabek" ? 345000 : 425000;
+          break;
+        default:
+          break;
+      }
+
+      let totalBiaya = daysDiff * biayaPerHari;
+      if (daysDiff > 5) {
+        totalBiaya -= (daysDiff - 5) * 30000;
+      }
+      setTotalBiaya(totalBiaya);
+    }
+
+    if (window.emailjs) {
+      window.emailjs.init("IMhDqFBmKXuSUzNx1"); // Account Public Key
+    } else {
+      console.error("EmailJS not loaded");
+    }
+  }, [jenismobil, tujuan, tanggalMulai, tanggalKembali]);
+
+  const handleSubmit = (event) => {
+    event.preventDefault(); // Prevent the form from submitting normally
+    // Check if both selected values match the ID of the displayed game
+
+    // Send email
+    const templateParams = {
+      nama,
+      nomortelepon,
+      email,
+      pesan,
+    };
+
+    emailjs
+      .send(
+        "service_vzgrtle",
+        "template_vvwnvjs",
+        templateParams,
+        "rTt69g98P7C_ALw-h"
+      )
+      .then(
+        (response) => {
+          console.log(
+            "Pesan berhasil dikirimkan ke cityparkcarrent@gmail.com!",
+            response.status,
+            response.text
+          );
+          alert("Pesan berhasil dikirimkan ke cityparkcarrent@gmail.com!");
+        },
+        (err) => {
+          console.error("Failed to send email. Error:", err);
+        }
+      );
+  };
+
+  const handleDownload = () => {
+    const element = document.querySelector(".trip-form");
+    html2canvas(element).then((canvas) => {
+      const link = document.createElement("a");
+      link.download = "buktiperhitunganrentalmobilcitypark.png";
+      link.href = canvas.toDataURL();
+      link.click();
+    });
+  };
+
   return (
     <>
       <div className="ftco-blocks-cover-1">
@@ -41,7 +132,7 @@ function Home() {
               <h3 className="offer-title">Mobil Kami</h3>
               <p className="mb-4 offer-desc">
                 Harga mobil belum termasuk bensin, tol, dan parkir. <br />
-                Dapatkan diskon Rp20k/hari untuk setiap hari selanjutnya jika
+                Dapatkan diskon Rp30k/hari untuk setiap hari selanjutnya jika
                 lebih dari 5 hari dalam sekali sewa!
               </p>
               <p>
@@ -57,7 +148,10 @@ function Home() {
             <div className="col-lg-9">
               <div className="nonloop-block-13 owl-carousel">
                 <div className="item-1">
-                  <a href="#">
+                  <a
+                    href="https://api.whatsapp.com/send?phone=+6281317796129&text=Hi City Park Car Rental, saya ingin menyewa mobil Toyota Raize dengan wilayah [JaBoDeTaBek/luar JaBoDeTaBek] dari [tanggal mulai] sampai [tanggal kembali]"
+                    target="_blank"
+                  >
                     <img
                       src="/assets/img/toyotaraize.png"
                       alt="Image"
@@ -107,7 +201,7 @@ function Home() {
                     </ul>
                     <div className="d-flex action">
                       <a
-                        href="https://www.youtube.com/watch?v=BFS9n4B_2xA"
+                        href="https://www.youtube.com/watch?v=videoakansegerahadir"
                         className="btn btn-primary offer-nav"
                         target="_blank"
                       >
@@ -115,7 +209,8 @@ function Home() {
                       </a>{" "}
                       &nbsp;&nbsp;
                       <a
-                        href="contact.html"
+                        href="https://api.whatsapp.com/send?phone=+6281317796129&text=Hi City Park Car Rental, saya ingin menyewa mobil Toyota Raize dengan wilayah [JaBoDeTaBek/luar JaBoDeTaBek] dari [tanggal mulai] sampai [tanggal kembali]"
+                        target="_blank"
                         className="btn btn-primary offer-nav"
                       >
                         Sewa Sekarang&nbsp;&nbsp;
@@ -125,7 +220,10 @@ function Home() {
                   </div>
                 </div>
                 <div className="item-1">
-                  <a href="#">
+                  <a
+                    href="https://api.whatsapp.com/send?phone=+6281317796129&text=Hi City Park Car Rental, saya ingin menyewa mobil Toyota Avanza dengan wilayah [JaBoDeTaBek/luar JaBoDeTaBek] dari [tanggal mulai] sampai [tanggal kembali]"
+                    target="_blank"
+                  >
                     <img
                       src="/assets/img/toyotaavanza.png"
                       alt="Image"
@@ -135,9 +233,7 @@ function Home() {
                   <div className="item-1-contents">
                     <div className="text-center">
                       <h3>
-                        <a href="#" className="offer-car-title">
-                          Toyota Avanza
-                        </a>
+                        <a className="offer-car-title">Toyota Avanza</a>
                       </h3>
 
                       <div className="rent-price">
@@ -175,7 +271,7 @@ function Home() {
                     </ul>
                     <div className="d-flex action">
                       <a
-                        href="https://www.youtube.com/watch?v=BFS9n4B_2xA"
+                        href="https://www.youtube.com/watch?v=videoakansegerahadir"
                         target="_blank"
                         className="btn btn-primary offer-nav"
                       >
@@ -183,7 +279,8 @@ function Home() {
                       </a>{" "}
                       &nbsp;&nbsp;
                       <a
-                        href="contact.html"
+                        href="https://api.whatsapp.com/send?phone=+6281317796129&text=Hi City Park Car Rental, saya ingin menyewa mobil Toyota Avanza dengan wilayah [JaBoDeTaBek/luar JaBoDeTaBek] dari [tanggal mulai] sampai [tanggal kembali]"
+                        target="_blank"
                         className="btn btn-primary offer-nav"
                       >
                         Sewa Sekarang&nbsp;&nbsp;
@@ -208,12 +305,22 @@ function Home() {
                     <h3 className="m-0">
                       Hitung Total Biaya : Rp
                       <span className="total-biaya" id="total-biaya">
-                        0
+                        {totalBiaya.toLocaleString()}
                       </span>
                     </h3>
                   </div>
-                  <div className="col-md-6 text-md-right">
-                    <span>Anda dapat menghitung total biaya disini!</span>
+                  <div
+                    className="col-md-6 text-md-right"
+                    id="unduh-bukti-parent"
+                  >
+                    <button
+                      type="button"
+                      className="btn btn-primary offer-nav"
+                      onClick={handleDownload}
+                    >
+                      Unduh Bukti&nbsp;&nbsp;
+                      <i className="fa fa-download" aria-hidden="true"></i>
+                    </button>
                   </div>
                 </div>
                 <div className="row">
@@ -221,47 +328,62 @@ function Home() {
                     <label htmlFor="cf-1">Jenis mobil</label>
                     <select
                       id="cf-1"
-                      placeholder="Jenis Mobil"
                       className="form-control"
                       name="jenismobil"
+                      value={jenismobil}
+                      onChange={(e) => setJenisMobil(e.target.value)}
                     >
                       <option value="raize">Raize</option>
-                      <option value="raize">Avanza</option>
+                      <option value="avanza">Avanza</option>
                     </select>
                   </div>
                   <div className="form-group col-md-3">
-                    <label htmlFor="cf-1">Tujuan</label>
+                    <label htmlFor="cf-2">Wilayah</label>
                     <select
-                      id="cf-1"
-                      placeholder="Fasilitas"
+                      id="cf-2"
                       className="form-control"
                       name="fasilitas"
+                      value={tujuan}
+                      onChange={(e) => setTujuan(e.target.value)}
                     >
-                      <option value="dengansopir">Hanya JaBoDeTaBek</option>
-                      <option value="lepaskunci">Luar JaBoDeTaBek</option>
+                      <option value="hanyajabodetabek">
+                        Hanya JaBoDeTaBek
+                      </option>
+                      <option value="luarjabodetabek">Luar JaBoDeTaBek</option>
                     </select>
                   </div>
                   <div className="form-group col-md-3">
                     <label htmlFor="cf-3">Tanggal mulai</label>
                     <input
-                      type="text"
+                      type="date"
                       id="cf-3"
-                      placeholder="Pilih tanggal mulai"
-                      className="form-control datepicker px-3"
+                      className="form-control px-3"
+                      name="tanggalmulai"
+                      value={tanggalMulai}
+                      onChange={(e) => setTanggalMulai(e.target.value)}
                     />
                   </div>
                   <div className="form-group col-md-3">
                     <label htmlFor="cf-4">Tanggal kembali</label>
                     <input
-                      type="text"
+                      type="date"
                       id="cf-4"
-                      placeholder="Pilih tanggal kembali"
-                      className="form-control datepicker px-3"
+                      className="form-control px-3"
+                      name="tanggalkembali"
+                      value={tanggalKembali}
+                      onChange={(e) => setTanggalKembali(e.target.value)}
                     />
                   </div>
                 </div>
                 <div className="row">
-                  <div className="col-lg-6"></div>
+                  <div className="col-lg-12">
+                    <span className="keterangan-biaya">
+                      <h5>
+                        Anda dapat menghitung total biaya disini! Untuk
+                        ketersediaan mobil, silahkan hubungi kami.
+                      </h5>
+                    </span>
+                  </div>
                 </div>
               </form>
             </div>
@@ -319,7 +441,7 @@ function Home() {
           </div>
         </div>
       </div>
-
+      <Kebijakan />
       <div class="site-section bg-light" id="kontak">
         <div class="container">
           <div class="row justify-content-center text-center">
@@ -333,7 +455,7 @@ function Home() {
           </div>
           <div class="row">
             <div class="col-lg-8 mb-5">
-              <form action="#" method="post">
+              <form onSubmit={handleSubmit}>
                 <div class="form-group row">
                   <div class="col-md-6 mb-4 mb-lg-0">
                     <input
@@ -341,6 +463,8 @@ function Home() {
                       class="form-control"
                       placeholder="Nama"
                       name="nama"
+                      onChange={(e) => setNama(e.target.value)}
+                      required
                     />
                   </div>
                   <div class="col-md-6">
@@ -349,6 +473,7 @@ function Home() {
                       class="form-control"
                       placeholder="Nomor Telepon"
                       name="nomortelepon"
+                      onChange={(e) => setNomorTelepon(e.target.value)}
                       required
                     />
                   </div>
@@ -361,6 +486,7 @@ function Home() {
                       class="form-control"
                       placeholder="Email"
                       name="email"
+                      onChange={(e) => setEmail(e.target.value)}
                       required
                     />
                   </div>
@@ -375,17 +501,19 @@ function Home() {
                       placeholder="Pesan/Pertanyaan"
                       cols="30"
                       rows="10"
+                      required
+                      onChange={(e) => setPesan(e.target.value)}
                     ></textarea>
                   </div>
                 </div>
                 <div class="form-group row">
-                  <div class="col-md-6 mr-auto">
-                    <input
+                  <div class="col-md-12 mr-auto">
+                    <button
                       type="submit"
-                      class="btn btn-block btn-primary text-white py-3 px-5"
-                      value="Kirim Pesan"
-                      required
-                    />
+                      className="btn btn-block btn-primary text-white py-3 px-5"
+                    >
+                      Kirim Pesan
+                    </button>
                   </div>
                 </div>
               </form>

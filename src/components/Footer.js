@@ -8,12 +8,20 @@ function Footer() {
         <div className="container">
           <div className="row">
             <div className="col-lg-12 text-center">
+              <img
+                src="/assets/img/logo.png"
+                alt="Logo"
+                className="footer-logo mb-4"
+                style={{
+                  height: "20.2em",
+                }}
+              />
               <h2 className="footer-heading mb-4">
-                City Park <br /> Car Rental
+                City Park Car Rental / <br /> Rental Mobil City Park
               </h2>
               <p className="footer-contact">
                 <p>
-                  <i class="fa fa-contact"></i>{" "}
+                  <i class="fa fa-envelope"></i>{" "}
                   <a
                     href="mailto:cityparkcarrental@gmail.com"
                     className="footer-contact-email"
@@ -22,10 +30,24 @@ function Footer() {
                   </a>
                 </p>
                 <p>
-                  <i class="fa fa-whatsapp"></i> 0813-1883-3544 (Afri)
+                  <i class="fa fa-whatsapp"></i>&nbsp;
+                  <a
+                    href="https://api.whatsapp.com/send?phone=+6281318833544&text=Hi City Park Car Rental, saya ingin menyewa mobil [merk] untuk [berapa hari] dengan tujuan [tujuan] dari [tanggal mulai] sampai [tanggal kembali]"
+                    target="_blank"
+                    className="footer-contact-email"
+                  >
+                    0813-1883-3544 (Afri)
+                  </a>
                 </p>
                 <p>
-                  <i class="fa fa-whatsapp"></i> 0813-1779-6129 (Lena)
+                  <i class="fa fa-whatsapp"></i>&nbsp;
+                  <a
+                    href="https://api.whatsapp.com/send?phone=+6281317796129&text=Hi City Park Car Rental, saya ingin menyewa mobil [merk] untuk [berapa hari] dengan tujuan [tujuan] dari [tanggal mulai] sampai [tanggal kembali]"
+                    target="_blank"
+                    className="footer-contact-email"
+                  >
+                    0813-1779-6129 (Lena)
+                  </a>
                 </p>
                 <p>Apartemen City Park, Cengkareng, Jakarta Barat</p>
               </p>
