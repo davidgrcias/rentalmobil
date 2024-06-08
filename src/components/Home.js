@@ -380,7 +380,8 @@ function Home() {
                     <span className="keterangan-biaya">
                       <h5>
                         Anda dapat menghitung total biaya disini! Untuk
-                        ketersediaan mobil, silahkan hubungi kami.
+                        ketersediaan mobil dan info selengkapnya, silahkan
+                        hubungi kami.
                       </h5>
                     </span>
                   </div>
