@@ -26,10 +26,10 @@ function Home() {
       let biayaPerHari = 0;
       switch (jenismobil) {
         case "raize":
-          biayaPerHari = tujuan === "hanyajabodetabek" ? 420000 : 495000;
+          biayaPerHari = tujuan === "hanyajabodetabek" ? 410000 : 445000;
           break;
         case "avanza":
-          biayaPerHari = tujuan === "hanyajabodetabek" ? 345000 : 425000;
+          biayaPerHari = tujuan === "hanyajabodetabek" ? 325000 : 360000;
           break;
         default:
           break;
@@ -165,10 +165,10 @@ function Home() {
                       </h3>
 
                       <div className="rent-price">
-                        <span>Rp420k/</span>hari (JaBoDeTaBek)
+                        <span>Rp410k/</span>hari (JaBoDeTaBek)
                       </div>
                       <div className="rent-price">
-                        <span>Rp495k/</span>hari (Luar JaBoDeTaBek)
+                        <span>Rp445k/</span>hari (Luar JaBoDeTaBek)
                       </div>
                     </div>
                     <ul className="specs">
@@ -235,10 +235,10 @@ function Home() {
                       </h3>
 
                       <div className="rent-price">
-                        <span>Rp345k/</span>hari (JaBoDeTaBek)
+                        <span>Rp325k/</span>hari (JaBoDeTaBek)
                       </div>
                       <div className="rent-price">
-                        <span>Rp425k/</span>hari (Luar JaBoDeTaBek)
+                        <span>Rp360k/</span>hari (Luar JaBoDeTaBek)
                       </div>
                     </div>
                     <ul className="specs">
