@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Fjalla+One&family=Jost:ital,wght@0,100..900;1,100..900&family=Lexend+Deca:wght@100..900&family=Play:wght@400;700&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=DM+Serif+Text:ital@0;1&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
 
 .ftco-cover-1 {
   min-height: 100% !important;
@@ -120,6 +121,27 @@
   padding-bottom: 0em !important;
 }
 
+#kebijakan * {
+  font-family: "Archivo", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-variation-settings: 100;
+}
+
+#mengapa h2,
+#mengapa .service-1-contents {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#kontak * {
+  font-family: "Zilla Slab", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 @media (max-width: 766px) {
   #unduh-bukti-parent {
     margin-top: 1em !important;
@@ -135,4 +157,16 @@
 #kontak {
   padding-bottom: 1em !important;
   padding-top: 4.5em !important;
+}
+
+#footer {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.hitungTotalBiaya {
+  font-family: "Arvo", serif;
+  font-weight: 400;
+  font-style: normal; 
 }

@@ -303,9 +303,11 @@ function Home() {
                 <div className="row align-items-center mb-4">
                   <div className="col-md-6">
                     <h3 className="m-0">
-                      Hitung Total Biaya : Rp
-                      <span className="total-biaya" id="total-biaya">
-                        {totalBiaya.toLocaleString()}
+                      <span className="hitungTotalBiaya">
+                        Hitung Total Biaya : Rp
+                        <span className="total-biaya" id="total-biaya">
+                          {totalBiaya.toLocaleString()}
+                        </span>{" "}
                       </span>
                     </h3>
                   </div>

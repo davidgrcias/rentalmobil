@@ -24,9 +24,6 @@ function Kebijakan() {
                 Bagi penyewa wajib memiliki SIM A
               </li>
               <li className="list-group-item">
-                Penyewa wajib memberikan nomor rekening
-              </li>
-              <li className="list-group-item">
                 Penyewa wajib memberikan KTP dan Kartu Keluarga (Fotokopi)
               </li>
               <li className="list-group-item">
@@ -41,8 +38,8 @@ function Kebijakan() {
                 wilayah pemakaian kendaraan sesuai perjanjian
               </li>
               <li className="list-group-item">
-                Adanya denda sesuai ketentuan jika terjadi kerusakan ringan atau
-                kerusakan berat
+                Bila ada kerusakan ringan atau kerusakan berat, hal tersebut
+                akan menjadi tanggung jawab penyewa mobil
               </li>
               <li className="list-group-item">
                 Durasi penyewaan dianggap digunakan secara full dan tidak bisa
