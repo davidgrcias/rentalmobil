@@ -161,9 +161,7 @@ function Home() {
                   <div className="item-1-contents">
                     <div className="text-center">
                       <h3>
-                        <a href="#" className="offer-car-title">
-                          Toyota Raize GR Sport
-                        </a>
+                        <a className="offer-car-title">Toyota Raize GR Sport</a>
                       </h3>
 
                       <div className="rent-price">
