@@ -93,7 +93,6 @@ function FloatButton() {
           </ul>
         </div>
       </div>
-      <audio ref={audioRef} src="/assets/music/car.mp3" />
     </div>
   );
 }

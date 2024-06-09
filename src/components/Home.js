@@ -199,7 +199,7 @@ function Home() {
                     </ul>
                     <div className="d-flex action">
                       <a
-                        href="https://www.youtube.com/watch?v=videoakansegerahadir"
+                        href="#"
                         className="btn btn-primary offer-nav"
                         target="_blank"
                       >
@@ -269,7 +269,7 @@ function Home() {
                     </ul>
                     <div className="d-flex action">
                       <a
-                        href="https://www.youtube.com/watch?v=videoakansegerahadir"
+                        href="#"
                         target="_blank"
                         className="btn btn-primary offer-nav"
                       >
