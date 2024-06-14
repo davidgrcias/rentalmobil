@@ -10,6 +10,7 @@ function Home() {
   const [tanggalMulai, setTanggalMulai] = useState("");
   const [tanggalKembali, setTanggalKembali] = useState("");
   const [totalBiaya, setTotalBiaya] = useState(0);
+  const [totalDiskon, setTotalDiskon] = useState(0);
 
   const [nama, setNama] = useState("");
   const [email, setEmail] = useState("");
@@ -26,20 +27,32 @@ function Home() {
       let biayaPerHari = 0;
       switch (jenismobil) {
         case "raize":
-          biayaPerHari = tujuan === "hanyajabodetabek" ? 410000 : 445000;
+          biayaPerHari = tujuan === "hanyajabodetabek" ? 400000 : 420000;
           break;
         case "avanza":
-          biayaPerHari = tujuan === "hanyajabodetabek" ? 325000 : 360000;
+          biayaPerHari = tujuan === "hanyajabodetabek" ? 305000 : 325000;
           break;
         default:
           break;
       }
 
       let totalBiaya = daysDiff * biayaPerHari;
+      let totalDiskon = 0;
+
       if (daysDiff > 5) {
-        totalBiaya -= (daysDiff - 5) * 30000;
+        const additionalDays = daysDiff - 5;
+        if (additionalDays <= 7) {
+          totalDiskon = additionalDays * 30000;
+        } else if (additionalDays <= 17) {
+          totalDiskon = 7 * 30000 + (additionalDays - 7) * 70000;
+        } else {
+          totalDiskon = 7 * 30000 + 10 * 70000 + (additionalDays - 17) * 100000;
+        }
+        totalBiaya -= totalDiskon;
       }
+
       setTotalBiaya(totalBiaya);
+      setTotalDiskon(totalDiskon);
     }
 
     if (window.emailjs) {
@@ -133,7 +146,10 @@ function Home() {
               <p className="mb-4 offer-desc">
                 Harga mobil belum termasuk bensin, tol, dan parkir. <br />
                 Dapatkan diskon Rp30k/hari untuk setiap hari selanjutnya jika
-                lebih dari 5 hari dalam sekali sewa!
+                lebih dari 5 hari dalam sekali sewa, diskon Rp70k/hari untuk
+                setiap hari selanjutnya jika lebih dari 12 hari dalam sekali
+                sewa, diskon Rp100k/hari untuk setiap hari selanjutnya jika
+                lebih dari 22 hari dalam sekali sewa!
               </p>
               <p>
                 <a href="#" className="btn btn-primary custom-prev offer-nav">
@@ -165,10 +181,10 @@ function Home() {
                       </h3>
 
                       <div className="rent-price">
-                        <span>Rp410k/</span>hari (JaBoDeTaBek)
+                        <span>Rp400k/</span>hari (JaBoDeTaBek)
                       </div>
                       <div className="rent-price">
-                        <span>Rp445k/</span>hari (Luar JaBoDeTaBek)
+                        <span>Rp420k/</span>hari (Luar JaBoDeTaBek)
                       </div>
                     </div>
                     <ul className="specs">
@@ -235,10 +251,10 @@ function Home() {
                       </h3>
 
                       <div className="rent-price">
-                        <span>Rp325k/</span>hari (JaBoDeTaBek)
+                        <span>Rp305k/</span>hari (JaBoDeTaBek)
                       </div>
                       <div className="rent-price">
-                        <span>Rp360k/</span>hari (Luar JaBoDeTaBek)
+                        <span>Rp325k/</span>hari (Luar JaBoDeTaBek)
                       </div>
                     </div>
                     <ul className="specs">
@@ -305,7 +321,14 @@ function Home() {
                         Hitung Total Biaya : Rp
                         <span className="total-biaya" id="total-biaya">
                           {totalBiaya.toLocaleString()}
-                        </span>{" "}
+                        </span>
+                        <br />
+                        <small>
+                          Total Diskon: Rp
+                          <span className="total-diskon" id="total-diskon">
+                            {totalDiskon.toLocaleString()}
+                          </span>
+                        </small>
                       </span>
                     </h3>
                   </div>
