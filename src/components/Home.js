@@ -125,7 +125,7 @@ function Home() {
                 <p className="lead mb-12 mid">
                   Selamat datang di situs Rental Mobil City Park! Kami
                   menyediakan jasa rental mobil murah lepas kunci dengan harga
-                  mulai dari Rp345.000 saja.
+                  mulai dari Rp305.000 saja.
                 </p>
                 {/* Form */}
 
@@ -436,7 +436,7 @@ function Home() {
                 </span>
                 <div className="service-1-contents">
                   <h3>Harga Terjangkau</h3>
-                  <p>Harga yang kami berikan mulai dari Rp345k saja.</p>
+                  <p>Harga yang kami berikan mulai dari Rp305k saja.</p>
                 </div>
               </div>
             </div>
