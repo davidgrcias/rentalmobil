@@ -83,10 +83,10 @@ function FloatButton() {
             </li>
             <li>
               <a
-                href="https://api.whatsapp.com/send?phone=+6281317796129&text=Hi City Park Car Rental, saya ingin menyewa mobil [merk] untuk [berapa hari] dengan tujuan [tujuan] dari [tanggal mulai] sampai [tanggal kembali]"
+                href="https://api.whatsapp.com/send?phone=+6287776803957&text=Hi City Park Car Rental, saya ingin menyewa mobil [merk] untuk [berapa hari] dengan tujuan [tujuan] dari [tanggal mulai] sampai [tanggal kembali]"
                 target="_blank"
               >
-                Klik untuk Hubungi 0813-1779-6129 (Lena) &nbsp;
+                Klik untuk Hubungi 0877-7680-3957 (David) &nbsp;
                 <i className="fa-solid fa fa-whatsapp"></i>
               </a>
             </li>

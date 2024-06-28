@@ -42,11 +42,11 @@ function Footer() {
                 <p>
                   <i class="fa fa-whatsapp"></i>&nbsp;
                   <a
-                    href="https://api.whatsapp.com/send?phone=+6281317796129&text=Hi City Park Car Rental, saya ingin menyewa mobil [merk] untuk [berapa hari] dengan tujuan [tujuan] dari [tanggal mulai] sampai [tanggal kembali]"
+                    href="https://api.whatsapp.com/send?phone=+6287776803957&text=Hi City Park Car Rental, saya ingin menyewa mobil [merk] untuk [berapa hari] dengan tujuan [tujuan] dari [tanggal mulai] sampai [tanggal kembali]"
                     target="_blank"
                     className="footer-contact-email"
                   >
-                    0813-1779-6129 (Lena)
+                    0877-7680-3957 (David)
                   </a>
                 </p>
                 <p>Apartemen City Park, Cengkareng, Jakarta Barat</p>
