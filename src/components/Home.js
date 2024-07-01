@@ -30,7 +30,7 @@ function Home() {
           biayaPerHari = tujuan === "hanyajabodetabek" ? 400000 : 420000;
           break;
         case "avanza":
-          biayaPerHari = tujuan === "hanyajabodetabek" ? 305000 : 325000;
+          biayaPerHari = tujuan === "hanyajabodetabek" ? 345000 : 375000;
           break;
         default:
           break;
@@ -125,7 +125,7 @@ function Home() {
                 <p className="lead mb-12 mid">
                   Selamat datang di situs Rental Mobil City Park! Kami
                   menyediakan jasa rental mobil murah lepas kunci dengan harga
-                  mulai dari Rp305.000 saja.
+                  mulai dari Rp345.000 saja.
                 </p>
                 {/* Form */}
 
@@ -251,10 +251,10 @@ function Home() {
                       </h3>
 
                       <div className="rent-price">
-                        <span>Rp305k/</span>hari (JaBoDeTaBek)
+                        <span>Rp345k/</span>hari (JaBoDeTaBek)
                       </div>
                       <div className="rent-price">
-                        <span>Rp325k/</span>hari (Luar JaBoDeTaBek)
+                        <span>Rp375k/</span>hari (Luar JaBoDeTaBek)
                       </div>
                     </div>
                     <ul className="specs">
