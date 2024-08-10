@@ -5,7 +5,7 @@ import emailjs from "emailjs-com";
 import Kebijakan from "./Kebijakan";
 
 function Home() {
-  const [jenismobil, setJenisMobil] = useState("raize");
+  const [jenismobil, setJenisMobil] = useState("agya");
   const [tujuan, setTujuan] = useState("hanyajabodetabek");
   const [tanggalMulai, setTanggalMulai] = useState("");
   const [tanggalKembali, setTanggalKembali] = useState("");
@@ -27,10 +27,13 @@ function Home() {
       let biayaPerHari = 0;
       switch (jenismobil) {
         case "raize":
-          biayaPerHari = tujuan === "hanyajabodetabek" ? 400000 : 420000;
+          biayaPerHari = tujuan === "hanyajabodetabek" ? 420000 : 450000;
           break;
         case "avanza":
-          biayaPerHari = tujuan === "hanyajabodetabek" ? 345000 : 375000;
+          biayaPerHari = tujuan === "hanyajabodetabek" ? 350000 : 380000;
+          break;
+        case "agya":
+          biayaPerHari = tujuan === "hanyajabodetabek" ? 350000 : 380000;
           break;
         default:
           break;
@@ -125,7 +128,7 @@ function Home() {
                 <p className="lead mb-12 mid">
                   Selamat datang di situs Rental Mobil City Park! Kami
                   menyediakan jasa rental mobil murah lepas kunci dengan harga
-                  mulai dari Rp345.000 saja.
+                  mulai dari Rp350.000 saja.
                 </p>
                 {/* Form */}
 
@@ -165,76 +168,6 @@ function Home() {
               <div className="nonloop-block-13 owl-carousel">
                 <div className="item-1">
                   <a
-                    href="https://api.whatsapp.com/send?phone=+6287776803957&text=Hi City Park Car Rental, saya ingin menyewa mobil Toyota Raize dengan wilayah [JaBoDeTaBek/luar JaBoDeTaBek] dari [tanggal mulai] sampai [tanggal kembali]"
-                    target="_blank"
-                  >
-                    <img
-                      src="/assets/img/toyotaraize.png"
-                      alt="Image"
-                      className="img-fluid"
-                    />
-                  </a>
-                  <div className="item-1-contents">
-                    <div className="text-center">
-                      <h3>
-                        <a className="offer-car-title">Toyota Raize GR Sport</a>
-                      </h3>
-
-                      <div className="rent-price">
-                        <span>Rp400k/</span>hari (JaBoDeTaBek)
-                      </div>
-                      <div className="rent-price">
-                        <span>Rp420k/</span>hari (Luar JaBoDeTaBek)
-                      </div>
-                    </div>
-                    <ul className="specs">
-                      <li>
-                        <span>Jenis Kendaraan</span>
-                        <span className="spec">SUV</span>
-                      </li>
-                      <li>
-                        <span>Tahun</span>
-                        <span className="spec">2022</span>
-                      </li>
-                      <li>
-                        <span>CC</span>
-                        <span className="spec">1000 CC Turbo</span>
-                      </li>
-                      <li>
-                        <span>AC</span>
-                        <span className="spec">Single Blower</span>
-                      </li>
-                      <li>
-                        <span>Transmisi</span>
-                        <span className="spec">Matic</span>
-                      </li>
-                      <li>
-                        <span>Kursi</span>
-                        <span className="spec">4</span>
-                      </li>
-                    </ul>
-                    <div className="d-flex action">
-                      <a
-                        href="#"
-                        className="btn btn-primary offer-nav"
-                        target="_blank"
-                      >
-                        <i class="fa fa-play" aria-hidden="true"></i> Video
-                      </a>{" "}
-                      &nbsp;&nbsp;
-                      <a
-                        href="https://api.whatsapp.com/send?phone=+6287776803957&text=Hi City Park Car Rental, saya ingin menyewa mobil Toyota Raize dengan wilayah [JaBoDeTaBek/luar JaBoDeTaBek] dari [tanggal mulai] sampai [tanggal kembali]"
-                        target="_blank"
-                        className="btn btn-primary offer-nav"
-                      >
-                        Sewa Sekarang&nbsp;&nbsp;
-                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div className="item-1">
-                  <a
                     href="https://api.whatsapp.com/send?phone=+6287776803957&text=Hi City Park Car Rental, saya ingin menyewa mobil Toyota Avanza dengan wilayah [JaBoDeTaBek/luar JaBoDeTaBek] dari [tanggal mulai] sampai [tanggal kembali]"
                     target="_blank"
                   >
@@ -251,10 +184,10 @@ function Home() {
                       </h3>
 
                       <div className="rent-price">
-                        <span>Rp345k/</span>hari (JaBoDeTaBek)
+                        <span>Rp350k/</span>hari (JaBoDeTaBek)
                       </div>
                       <div className="rent-price">
-                        <span>Rp375k/</span>hari (Luar JaBoDeTaBek)
+                        <span>Rp380k/</span>hari (Luar JaBoDeTaBek, Max: ±110km)
                       </div>
                     </div>
                     <ul className="specs">
@@ -294,6 +227,147 @@ function Home() {
                       &nbsp;&nbsp;
                       <a
                         href="https://api.whatsapp.com/send?phone=+6287776803957&text=Hi City Park Car Rental, saya ingin menyewa mobil Toyota Avanza dengan wilayah [JaBoDeTaBek/luar JaBoDeTaBek] dari [tanggal mulai] sampai [tanggal kembali]"
+                        target="_blank"
+                        className="btn btn-primary offer-nav"
+                      >
+                        Sewa Sekarang&nbsp;&nbsp;
+                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className="item-1">
+                  <a
+                    href="https://api.whatsapp.com/send?phone=+6287776803957&text=Hi City Park Car Rental, saya ingin menyewa mobil Toyota Avanza dengan wilayah [JaBoDeTaBek/luar JaBoDeTaBek] dari [tanggal mulai] sampai [tanggal kembali]"
+                    target="_blank"
+                  >
+                    <img
+                      src="/assets/img/toyotaagya.webp"
+                      alt="Image"
+                      className="img-fluid"
+                      style={{ height: "290px" }}
+                    />
+                  </a>
+                  <div className="item-1-contents">
+                    <div className="text-center">
+                      <h3>
+                        <a className="offer-car-title">Toyota Agya</a>
+                      </h3>
+
+                      <div className="rent-price">
+                        <span>Rp350k/</span>hari (JaBoDeTaBek)
+                      </div>
+                      <div className="rent-price">
+                        <span>Rp380k/</span>hari (Luar JaBoDeTaBek, Max: ±110km)
+                      </div>
+                    </div>
+                    <ul className="specs">
+                      <li>
+                        <span>Jenis Kendaraan</span>
+                        <span className="spec">LCGC</span>
+                      </li>
+                      <li>
+                        <span>Tahun</span>
+                        <span className="spec">2024</span>
+                      </li>
+                      <li>
+                        <span>CC</span>
+                        <span className="spec">1198 CC</span>
+                      </li>
+                      <li>
+                        <span>AC</span>
+                        <span className="spec">Single Blower</span>
+                      </li>
+                      <li>
+                        <span>Transmisi</span>
+                        <span className="spec">Matic</span>
+                      </li>
+                      <li>
+                        <span>Kursi</span>
+                        <span className="spec">4</span>
+                      </li>
+                    </ul>
+                    <div className="d-flex action">
+                      <a
+                        href="#"
+                        target="_blank"
+                        className="btn btn-primary offer-nav"
+                      >
+                        <i class="fa fa-play" aria-hidden="true"></i> Video
+                      </a>{" "}
+                      &nbsp;&nbsp;
+                      <a
+                        href="https://api.whatsapp.com/send?phone=+6287776803957&text=Hi City Park Car Rental, saya ingin menyewa mobil Toyota Agya dengan wilayah [JaBoDeTaBek/luar JaBoDeTaBek] dari [tanggal mulai] sampai [tanggal kembali]"
+                        target="_blank"
+                        className="btn btn-primary offer-nav"
+                      >
+                        Sewa Sekarang&nbsp;&nbsp;
+                        <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div className="item-1">
+                  <a
+                    href="https://api.whatsapp.com/send?phone=+6287776803957&text=Hi City Park Car Rental, saya ingin menyewa mobil Toyota Raize dengan wilayah [JaBoDeTaBek/luar JaBoDeTaBek] dari [tanggal mulai] sampai [tanggal kembali]"
+                    target="_blank"
+                  >
+                    <img
+                      src="/assets/img/toyotaraize.png"
+                      alt="Image"
+                      className="img-fluid"
+                    />
+                  </a>
+                  <div className="item-1-contents">
+                    <div className="text-center">
+                      <h3>
+                        <a className="offer-car-title">Toyota Raize GR Sport</a>
+                      </h3>
+
+                      <div className="rent-price">
+                        <span>Rp420k/</span>hari (JaBoDeTaBek)
+                      </div>
+                      <div className="rent-price">
+                        <span>Rp450k/</span>hari (Luar JaBoDeTaBek, Max: ±110km)
+                      </div>
+                    </div>
+                    <ul className="specs">
+                      <li>
+                        <span>Jenis Kendaraan</span>
+                        <span className="spec">SUV</span>
+                      </li>
+                      <li>
+                        <span>Tahun</span>
+                        <span className="spec">2022</span>
+                      </li>
+                      <li>
+                        <span>CC</span>
+                        <span className="spec">1000 CC Turbo</span>
+                      </li>
+                      <li>
+                        <span>AC</span>
+                        <span className="spec">Single Blower</span>
+                      </li>
+                      <li>
+                        <span>Transmisi</span>
+                        <span className="spec">Matic</span>
+                      </li>
+                      <li>
+                        <span>Kursi</span>
+                        <span className="spec">4</span>
+                      </li>
+                    </ul>
+                    <div className="d-flex action">
+                      <a
+                        href="#"
+                        className="btn btn-primary offer-nav"
+                        target="_blank"
+                      >
+                        <i class="fa fa-play" aria-hidden="true"></i> Video
+                      </a>{" "}
+                      &nbsp;&nbsp;
+                      <a
+                        href="https://api.whatsapp.com/send?phone=+6287776803957&text=Hi City Park Car Rental, saya ingin menyewa mobil Toyota Raize dengan wilayah [JaBoDeTaBek/luar JaBoDeTaBek] dari [tanggal mulai] sampai [tanggal kembali]"
                         target="_blank"
                         className="btn btn-primary offer-nav"
                       >
@@ -356,8 +430,9 @@ function Home() {
                       value={jenismobil}
                       onChange={(e) => setJenisMobil(e.target.value)}
                     >
-                      <option value="raize">Raize</option>
                       <option value="avanza">Avanza</option>
+                      <option value="agya">Agya</option>
+                      <option value="raize">Raize</option>
                     </select>
                   </div>
                   <div className="form-group col-md-3">
@@ -402,9 +477,11 @@ function Home() {
                   <div className="col-lg-12">
                     <span className="keterangan-biaya">
                       <h5>
-                        Anda dapat menghitung total biaya disini! Untuk
-                        ketersediaan mobil dan info selengkapnya, silahkan
-                        hubungi kami.
+                        <span className="font-weight-bold text-uppercase">
+                          Anda dapat menghitung total biaya disini! Untuk
+                          ketersediaan mobil, nego harga dan waktu, serta info
+                          selengkapnya, silahkan hubungi kami.{" "}
+                        </span>
                       </h5>
                     </span>
                   </div>
