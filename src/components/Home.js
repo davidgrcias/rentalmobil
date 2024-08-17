@@ -33,7 +33,7 @@ function Home() {
           biayaPerHari = tujuan === "hanyajabodetabek" ? 350000 : 380000;
           break;
         case "agya":
-          biayaPerHari = tujuan === "hanyajabodetabek" ? 350000 : 380000;
+          biayaPerHari = tujuan === "hanyajabodetabek" ? 400000 : 430000;
           break;
         default:
           break;
@@ -255,10 +255,10 @@ function Home() {
                       </h3>
 
                       <div className="rent-price">
-                        <span>Rp350k/</span>hari (JaBoDeTaBek)
+                        <span>Rp400k/</span>hari (JaBoDeTaBek)
                       </div>
                       <div className="rent-price">
-                        <span>Rp380k/</span>hari (Luar JaBoDeTaBek, Max: ±110km)
+                        <span>Rp430k/</span>hari (Luar JaBoDeTaBek, Max: ±110km)
                       </div>
                     </div>
                     <ul className="specs">
