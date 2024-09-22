@@ -32,21 +32,21 @@ function Footer() {
                 <p>
                   <i class="fa fa-whatsapp"></i>&nbsp;
                   <a
-                    href="https://api.whatsapp.com/send?phone=+6281318833544&text=Hi City Park Car Rental, saya ingin menyewa mobil [merk] untuk [berapa hari] dengan tujuan [tujuan] dari [tanggal mulai] sampai [tanggal kembali]"
+                    href="https://api.whatsapp.com/send?phone=+6282124688813&text=Hi City Park Car Rental, saya ingin menyewa mobil [merk] untuk [berapa hari] dengan tujuan [tujuan] dari [tanggal mulai] sampai [tanggal kembali]"
                     target="_blank"
                     className="footer-contact-email"
                   >
-                    0813-1883-3544 (Afri)
+                    0821-2468-8813 (Rental Mobil City Park Official)
                   </a>
                 </p>
                 <p>
                   <i class="fa fa-whatsapp"></i>&nbsp;
                   <a
-                    href="https://api.whatsapp.com/send?phone=+6287776803957&text=Hi City Park Car Rental, saya ingin menyewa mobil [merk] untuk [berapa hari] dengan tujuan [tujuan] dari [tanggal mulai] sampai [tanggal kembali]"
+                    href="https://api.whatsapp.com/send?phone=+6281318833544&text=Hi City Park Car Rental, saya ingin menyewa mobil [merk] untuk [berapa hari] dengan tujuan [tujuan] dari [tanggal mulai] sampai [tanggal kembali]"
                     target="_blank"
                     className="footer-contact-email"
                   >
-                    0877-7680-3957 (David)
+                    0813-1883-3544 (Afri)
                   </a>
                 </p>
                 <p>Apartemen City Park, Cengkareng, Jakarta Barat</p>
