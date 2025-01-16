@@ -168,7 +168,7 @@ function Home() {
               <div className="nonloop-block-13 owl-carousel">
                 <div className="item-1">
                   <a
-                    href="https://api.whatsapp.com/send?phone=+6287776803957&text=Hi City Park Car Rental, saya ingin menyewa mobil Toyota Avanza dengan wilayah [JaBoDeTaBek/luar JaBoDeTaBek] dari [tanggal mulai] sampai [tanggal kembali]"
+                    href="https://api.whatsapp.com/send?phone=+6282124688813&text=Hi City Park Car Rental, saya ingin menyewa mobil Toyota Avanza dengan wilayah [JaBoDeTaBek/luar JaBoDeTaBek] dari [tanggal mulai] sampai [tanggal kembali]"
                     target="_blank"
                   >
                     <img
@@ -226,7 +226,7 @@ function Home() {
                       </a>{" "}
                       &nbsp;&nbsp;
                       <a
-                        href="https://api.whatsapp.com/send?phone=+6287776803957&text=Hi City Park Car Rental, saya ingin menyewa mobil Toyota Avanza dengan wilayah [JaBoDeTaBek/luar JaBoDeTaBek] dari [tanggal mulai] sampai [tanggal kembali]"
+                        href="https://api.whatsapp.com/send?phone=+6282124688813&text=Hi City Park Car Rental, saya ingin menyewa mobil Toyota Avanza dengan wilayah [JaBoDeTaBek/luar JaBoDeTaBek] dari [tanggal mulai] sampai [tanggal kembali]"
                         target="_blank"
                         className="btn btn-primary offer-nav"
                       >
@@ -238,7 +238,7 @@ function Home() {
                 </div>
                 <div className="item-1">
                   <a
-                    href="https://api.whatsapp.com/send?phone=+6287776803957&text=Hi City Park Car Rental, saya ingin menyewa mobil Toyota Avanza dengan wilayah [JaBoDeTaBek/luar JaBoDeTaBek] dari [tanggal mulai] sampai [tanggal kembali]"
+                    href="https://api.whatsapp.com/send?phone=+6282124688813&text=Hi City Park Car Rental, saya ingin menyewa mobil Toyota Avanza dengan wilayah [JaBoDeTaBek/luar JaBoDeTaBek] dari [tanggal mulai] sampai [tanggal kembali]"
                     target="_blank"
                   >
                     <img
@@ -297,7 +297,7 @@ function Home() {
                       </a>{" "}
                       &nbsp;&nbsp;
                       <a
-                        href="https://api.whatsapp.com/send?phone=+6287776803957&text=Hi City Park Car Rental, saya ingin menyewa mobil Toyota Agya dengan wilayah [JaBoDeTaBek/luar JaBoDeTaBek] dari [tanggal mulai] sampai [tanggal kembali]"
+                        href="https://api.whatsapp.com/send?phone=+6282124688813&text=Hi City Park Car Rental, saya ingin menyewa mobil Toyota Agya dengan wilayah [JaBoDeTaBek/luar JaBoDeTaBek] dari [tanggal mulai] sampai [tanggal kembali]"
                         target="_blank"
                         className="btn btn-primary offer-nav"
                       >
@@ -309,7 +309,7 @@ function Home() {
                 </div>
                 <div className="item-1">
                   <a
-                    href="https://api.whatsapp.com/send?phone=+6287776803957&text=Hi City Park Car Rental, saya ingin menyewa mobil Toyota Raize dengan wilayah [JaBoDeTaBek/luar JaBoDeTaBek] dari [tanggal mulai] sampai [tanggal kembali]"
+                    href="https://api.whatsapp.com/send?phone=+6282124688813&text=Hi City Park Car Rental, saya ingin menyewa mobil Toyota Raize dengan wilayah [JaBoDeTaBek/luar JaBoDeTaBek] dari [tanggal mulai] sampai [tanggal kembali]"
                     target="_blank"
                   >
                     <img
@@ -367,7 +367,7 @@ function Home() {
                       </a>{" "}
                       &nbsp;&nbsp;
                       <a
-                        href="https://api.whatsapp.com/send?phone=+6287776803957&text=Hi City Park Car Rental, saya ingin menyewa mobil Toyota Raize dengan wilayah [JaBoDeTaBek/luar JaBoDeTaBek] dari [tanggal mulai] sampai [tanggal kembali]"
+                        href="https://api.whatsapp.com/send?phone=+6282124688813&text=Hi City Park Car Rental, saya ingin menyewa mobil Toyota Raize dengan wilayah [JaBoDeTaBek/luar JaBoDeTaBek] dari [tanggal mulai] sampai [tanggal kembali]"
                         target="_blank"
                         className="btn btn-primary offer-nav"
                       >
@@ -632,9 +632,9 @@ function Home() {
                   </li>
                   <li class="d-block mb-3">
                     <span class="d-block text-black">Nomor Telepon:</span>
-                    <span>0813-1883-3544 (Afri)</span>
+                    <span>0821-2468-8813 (Rental Mobil City Park)</span>
                     <br />
-                    <span>0877-7680-3957 (David)</span>
+                    <span>0813-1883-3544 (Afri)</span>
                   </li>
                   <li class="d-block mb-3">
                     <span class="d-block text-black">Email:</span>
