@@ -513,7 +513,7 @@ function Home() {
                 </span>
                 <div className="service-1-contents">
                   <h3>Harga Terjangkau</h3>
-                  <p>Harga yang kami berikan mulai dari Rp305k saja.</p>
+                  <p>Harga yang kami berikan mulai dari Rp350k saja.</p>
                 </div>
               </div>
             </div>
