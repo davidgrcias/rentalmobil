@@ -684,12 +684,12 @@ function Home() {
               </div>
             </div>
 
-            <div className="col-12 mb-5">
+            <div className="col-12 mb-5 mt-5">
               <iframe
                 title="Rental Location"
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.9995262181833!2d106.73414637486658!3d-6.1307642938560205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a1ddadd0519c1%3A0x2de7dcf2c02aa834!2sRental%20Mobil%20City%20Park!5e0!3m2!1sen!2sid!4v1738031996273!5m2!1sen!2sid"
                 width="100%"
-                height="450"
+                height="650"
                 style={{ border: 0 }}
                 allowFullScreen=""
                 loading="lazy"
