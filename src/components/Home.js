@@ -4,6 +4,8 @@ import "./Home.css";
 import emailjs from "emailjs-com";
 import Kebijakan from "./Kebijakan";
 
+import EmbedGoogleReviews from "./EmbedGoogleReviews";
+
 function Home() {
   const [jenismobil, setJenisMobil] = useState("agya");
   const [tujuan, setTujuan] = useState("hanyajabodetabek");
@@ -387,7 +389,7 @@ function Home() {
         <div className="container">
           <div className="row">
             <div className="col-12 hitung-biaya">
-              <form className="trip-form">
+              <form className="trip-form mb-0 pb-0">
                 <div className="row align-items-center mb-4">
                   <div className="col-md-6">
                     <h3 className="m-0">
@@ -487,6 +489,9 @@ function Home() {
                   </div>
                 </div>
               </form>
+            </div>
+            <div className="col-12 mt-0 pt-0">
+              <EmbedGoogleReviews />
             </div>
           </div>
         </div>
