@@ -513,7 +513,7 @@ function Home() {
                 </span>
                 <div className="service-1-contents">
                   <h3>Harga Terjangkau</h3>
-                  <p>Harga yang kami berikan mulai dari Rp350k saja.</p>
+                  <p>Harga yang kami berikan mulai dari Rp350k saja</p>
                 </div>
               </div>
             </div>
@@ -524,7 +524,7 @@ function Home() {
                 </span>
                 <div className="service-1-contents">
                   <h3>Support 24/7</h3>
-                  <p>Kami siap melayani 24 jam setiap hari.</p>
+                  <p>Operasional tanpa henti siap melayani kebutuhan Anda</p>
                 </div>
               </div>
             </div>
@@ -535,7 +535,45 @@ function Home() {
                 </span>
                 <div className="service-1-contents">
                   <h3>Mobil Terawat</h3>
-                  <p>Mobil yang kami sewakan tentunya bersih dan terawat.</p>
+                  <p>Mobil yang kami sewakan tentunya bersih dan terawat</p>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4">
+              <div className="service-1">
+                <span className="service-1-icon">
+                  <span className="fa fa-users" />
+                </span>
+                <div className="service-1-contents">
+                  <h3>100+ Pelanggan Puas</h3>
+                  <p>
+                    Telah dipercaya berbagai kalangan sejak mulai beroperasi
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4">
+              <div className="service-1">
+                <span className="service-1-icon">
+                  <span className="fa fa-star" />
+                </span>
+                <div className="service-1-contents">
+                  <h3>Rating 5/5 di Google</h3>
+                  <p>
+                    40+ ulasan positif dari pelanggan yang menggunakan layanan
+                    kami
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4">
+              <div className="service-1">
+                <span className="service-1-icon">
+                  <span className="fa fa-credit-card" />
+                </span>
+                <div className="service-1-contents">
+                  <h3>Pembayaran Fleksibel</h3>
+                  <p>Transaksi aman via transfer bank, e-wallet, atau tunai</p>
                 </div>
               </div>
             </div>
@@ -642,6 +680,24 @@ function Home() {
                   </li>
                 </ul>
               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      {/* Location Map Section */}
+      <div className="site-section" id="location">
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <iframe
+                title="Rental Location"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.9995262181833!2d106.73414637486658!3d-6.1307642938560205!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6a1ddadd0519c1%3A0x2de7dcf2c02aa834!2sRental%20Mobil%20City%20Park!5e0!3m2!1sen!2sid!4v1738031996273!5m2!1sen!2sid"
+                width="100%"
+                height="450"
+                style={{ border: 0 }}
+                allowFullScreen=""
+                loading="lazy"
+              ></iframe>
             </div>
           </div>
         </div>
