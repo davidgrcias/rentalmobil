@@ -505,7 +505,35 @@ function Home() {
               </h2>
             </div>
           </div>
+
           <div className="row">
+            <div className="col-lg-4">
+              <div className="service-1">
+                <span className="service-1-icon">
+                  <span className="fa fa-star" />
+                </span>
+                <div className="service-1-contents">
+                  <h3>Rating 5/5 di Google</h3>
+                  <p>
+                    40+ ulasan positif dari pelanggan yang menggunakan layanan
+                    kami
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div className="col-lg-4">
+              <div className="service-1">
+                <span className="service-1-icon">
+                  <span className="fa fa-users" />
+                </span>
+                <div className="service-1-contents">
+                  <h3>100+ Pelanggan Puas</h3>
+                  <p>
+                    Telah dipercaya berbagai kalangan sejak mulai beroperasi
+                  </p>
+                </div>
+              </div>
+            </div>
             <div className="col-lg-4">
               <div className="service-1">
                 <span className="service-1-icon">
@@ -539,33 +567,7 @@ function Home() {
                 </div>
               </div>
             </div>
-            <div className="col-lg-4">
-              <div className="service-1">
-                <span className="service-1-icon">
-                  <span className="fa fa-users" />
-                </span>
-                <div className="service-1-contents">
-                  <h3>100+ Pelanggan Puas</h3>
-                  <p>
-                    Telah dipercaya berbagai kalangan sejak mulai beroperasi
-                  </p>
-                </div>
-              </div>
-            </div>
-            <div className="col-lg-4">
-              <div className="service-1">
-                <span className="service-1-icon">
-                  <span className="fa fa-star" />
-                </span>
-                <div className="service-1-contents">
-                  <h3>Rating 5/5 di Google</h3>
-                  <p>
-                    40+ ulasan positif dari pelanggan yang menggunakan layanan
-                    kami
-                  </p>
-                </div>
-              </div>
-            </div>
+
             <div className="col-lg-4">
               <div className="service-1">
                 <span className="service-1-icon">
