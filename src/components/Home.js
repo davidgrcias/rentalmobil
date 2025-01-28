@@ -718,6 +718,8 @@ function Home() {
               routes={[
                 {
                   title: "Rute KRL (Tangerang Line)",
+                  image1: "KRL.png",
+                  image2: "Tangerang.png",
                   subtitle: "St. Tangerang - St. Duri",
                   steps: [
                     { text: "St. Tangerang", icon: "train" },
@@ -746,6 +748,8 @@ function Home() {
               routes={[
                 {
                   title: "Rute KRL (Tangerang Line)",
+                  image1: "KRL.png",
+                  image2: "Tangerang.png",
                   subtitle: "St. Duri - St. Tangerang",
                   steps: [
                     { text: "St. Duri", icon: "train" },
@@ -774,6 +778,8 @@ function Home() {
               routes={[
                 {
                   title: "Rute Busway Transjakarta Non-BRT (3E)",
+                  image1: "TJ.png",
+                  image2: "3E.png",
                   subtitle: "Puri Kembangan - Sentraland Cengkareng",
                   steps: [
                     { text: "Puri Kembangan" },
@@ -818,6 +824,8 @@ function Home() {
               routes={[
                 {
                   title: "Rute Mikrotrans JakLingko (JAK52)",
+                  image1: "TJ.png",
+                  image2: "jak52.png",
                   subtitle: "Term. Muara Angke 2 - Kalideres 1",
                   steps: [
                     { text: "Term. Muara Angke 2" },

@@ -31,8 +31,27 @@ const Timeline = ({ routes }) => {
       {routes.map((route, index) => (
         <div key={index} className="route-section">
           <div className="route-header">
-            <h4>{route.title}</h4>
-            <p>{route.subtitle}</p>
+            <img
+              src={`/images/${route.image1}`}
+              alt="Logo"
+              style={{
+                marginLeft: "10px",
+                verticalAlign: "middle",
+                width: "50px",
+                marginBottom: "10px",
+              }}
+            />
+            <img
+              src={`/images/${route.image2}`}
+              alt="Logo"
+              style={{
+                marginLeft: "10px",
+                verticalAlign: "middle",
+                width: "50px",
+                marginBottom: "10px",
+              }}
+            />
+            <h4>{route.title}</h4> <p>{route.subtitle}</p>
           </div>
           <div className="simple-timeline">
             {route.steps.map((step, stepIndex) => (
