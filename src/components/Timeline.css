@@ -1,0 +1,91 @@
+/* Timeline.css */
+.transportation-guide {
+  padding: 2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.route-section {
+  margin-bottom: 3rem;
+}
+
+.route-header {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.route-header h4 {
+  color: #2c3e50;
+  margin-bottom: 0.5rem;
+}
+
+.route-header p {
+  color: #7f8c8d;
+  font-size: 0.9rem;
+}
+
+.simple-timeline {
+  position: relative;
+  padding-left: 30px;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.timeline-circle {
+  position: absolute;
+  left: -24px;
+  top: 3px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #3498db;
+  border: 3px solid white;
+  box-shadow: 0 0 0 2px #3498db;
+  z-index: 2;
+}
+
+.timeline-connector {
+  position: absolute;
+  left: -17px;
+  top: 23px;
+  height: calc(100% + 1.5rem);
+  width: 2px;
+  background-color: #bdc3c7;
+  z-index: 1;
+}
+
+.timeline-content {
+  position: relative;
+  padding: 10px 15px;
+  background: #f8f9fa;
+  border-left: 3px solid #3498db;
+  border-radius: 4px;
+  margin-left: 20px;
+}
+
+.timeline-icon {
+  position: absolute;
+  left: -70px;
+  top: -5px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+
+.icon-img {
+  width: 30px;
+  height: 30px;
+  filter: grayscale(100%);
+}
+
+.timeline-note {
+  font-size: 0.85rem;
+  color: #7f8c8d;
+  margin-top: 5px;
+}

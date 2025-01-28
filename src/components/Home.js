@@ -5,6 +5,7 @@ import emailjs from "emailjs-com";
 import Kebijakan from "./Kebijakan";
 
 import EmbedGoogleReviews from "./EmbedGoogleReviews";
+import Timeline from "./Timeline";
 
 function Home() {
   const [jenismobil, setJenisMobil] = useState("agya");
@@ -142,7 +143,6 @@ function Home() {
           </div>
         </div>
       </div>
-
       <div className="site-section bg-light" id="mobil">
         <div className="container">
           <div className="row">
@@ -384,7 +384,6 @@ function Home() {
           </div>
         </div>
       </div>
-
       <div className="site-section pt-0 pb-0 bg-light" id="biaya">
         <div className="container">
           <div className="row">
@@ -700,6 +699,163 @@ function Home() {
                 loading="lazy"
               ></iframe>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="site-section mb-0 pb-2" id="rute">
+        <div className="row mb-0">
+          <div className="col-12 text-center">
+            <h2 className="font-weight-bold mb-4">
+              Rute Transportasi ke Rental Mobil City Park
+            </h2>
+          </div>
+        </div>
+
+        <div className="row transport-route-card mb-0 pl-5 pr-5">
+          <div className="col-lg-6">
+            <Timeline
+              routes={[
+                {
+                  title: "Rute KRL (Tangerang Line)",
+                  subtitle: "St. Tangerang - St. Duri",
+                  steps: [
+                    { text: "St. Tangerang", icon: "train" },
+                    { text: "St. Tanah Tinggi", icon: "train" },
+                    { text: "St. Batu Ceper", icon: "train" },
+                    { text: "St. Poris", icon: "train" },
+                    { text: "St. Kali Deres", icon: "train" },
+                    {
+                      text: "Keluar St. Rawa Buaya",
+                      color: "red",
+                      icon: "exit",
+                      note: "Gunakan transportasi online menuju Rental Mobil City Park (5 km) atau bus Transjakarta 3E arah Sentraland dari bus stop Transjakarta Pool Rawa Buaya.",
+                    },
+                    {
+                      text: "Rental Mobil City Park",
+                      color: "green",
+                      icon: "flag-checkered",
+                    },
+                  ],
+                },
+              ]}
+            />
+          </div>
+          <div className="col-lg-6">
+            <Timeline
+              routes={[
+                {
+                  title: "Rute KRL (Tangerang Line)",
+                  subtitle: "St. Duri - St. Tangerang",
+                  steps: [
+                    { text: "St. Duri", icon: "train" },
+                    { text: "St. Grogol", icon: "train" },
+                    { text: "St. Pesing", icon: "train" },
+                    { text: "St. Taman Kota", icon: "train" },
+                    { text: "St. Bojong Indah", icon: "train" },
+                    {
+                      text: "Keluar St. Rawa Buaya",
+                      color: "red",
+                      icon: "exit",
+                      note: "Gunakan transportasi online menuju Rental Mobil City Park (5 km) atau bus Transjakarta 3E arah Sentraland dari bus stop Transjakarta Pool Rawa Buaya.",
+                    },
+                    {
+                      text: "Rental Mobil City Park",
+                      color: "green",
+                      icon: "flag-checkered",
+                    },
+                  ],
+                },
+              ]}
+            />
+          </div>
+          <div className="col-lg-6">
+            <Timeline
+              routes={[
+                {
+                  title: "Rute Busway Transjakarta Non-BRT (3E)",
+                  subtitle: "Puri Kembangan - Sentraland Cengkareng",
+                  steps: [
+                    { text: "Puri Kembangan" },
+                    { text: "Kantor Walikota Jakbar 1" },
+                    { text: "Kantor Walikota Jakbar 2" },
+                    { text: "Sbr. Jln. KH Hasim" },
+                    { text: "Simpang Kembangan Selatan" },
+                    { text: "Puri Mansion Apartement" },
+                    { text: "STT PLN" },
+                    { text: "Komplek Ruko Interkota" },
+                    { text: "Transjakarta Pool Rawa Buaya", icon: "train" },
+                    { text: "Jln. KH A Wahab" },
+                    { text: "Rawa Buaya", icon: "bus" },
+                    { text: "STIE Bisnis" },
+                    { text: "Sekolah Al Huda 1" },
+                    { text: "BSI Cengkareng" },
+                    { text: "Puskesmas Cengkareng" },
+                    { text: "Taman Palem Lestari" },
+                    { text: "Perumahan KFT 1" },
+                    { text: "Jln. Kencana Timur" },
+                    { text: "Jln. Kayu Besar Dalam" },
+                    { text: "Simpang Kapuk Cengkareng" },
+                    { text: "Sbr. Mutiara Taman Palem 1" },
+                    {
+                      text: "Turun di Simpang Jln. Malibu Raya",
+                      color: "red",
+                      icon: "exit",
+                      note: "Jalan kaki menuju Rental Mobil City Park (700 m).",
+                    },
+                    {
+                      text: "Rental Mobil City Park",
+                      color: "green",
+                      icon: "flag-checkered",
+                    },
+                  ],
+                },
+              ]}
+            />
+          </div>
+          <div className="col-lg-6">
+            <Timeline
+              routes={[
+                {
+                  title: "Rute Mikrotrans JakLingko (JAK52)",
+                  subtitle: "Term. Muara Angke 2 - Kalideres 1",
+                  steps: [
+                    { text: "Term. Muara Angke 2" },
+                    { text: "Jln. Pluit Karang Utara 1" },
+                    { text: "Sbr. Pluit Karang Cantik" },
+                    { text: "RPTRA Jakpro Asri" },
+                    { text: "Jembatan Pluit Karang Timur" },
+                    { text: "Jln. Pluit Karang Indah XV" },
+                    { text: "Muara Karang Raya" },
+                    { text: "Ps. Muara Karang" },
+                    { text: "SMAK Penabur Enam 2" },
+                    { text: "Taman Resort Mediterrania" },
+                    { text: "Galeri Niaga Mediterrania 1" },
+                    { text: "Margasatwa 2" },
+                    { text: "Jln. Lotus Indah" },
+                    { text: "Centro Metro Broadway" },
+                    { text: "Mayang Permai" },
+                    { text: "Simpang Mandara Permai 2" },
+                    { text: "Ekowisata Mangrove" },
+                    { text: "Jln. Elang Laut Kamal" },
+                    { text: "SIT I-II PIK" },
+                    { text: "SIT III PIK" },
+                    { text: "Sbr. RS Grand Family" },
+                    { text: "Jln. Kayu Besar Dalam" },
+                    {
+                      text: "Turun di Gerbang Barat Apartemen City Park",
+                      color: "red",
+                      icon: "exit",
+                    },
+                    {
+                      text: "Rental Mobil City Park",
+                      color: "green",
+                      icon: "flag-checkered",
+                    },
+                  ],
+                },
+              ]}
+            />
           </div>
         </div>
       </div>

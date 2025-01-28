@@ -75,6 +75,11 @@ function Navbar() {
                         Kontak
                       </a>
                     </li>
+                    <li activeClassName="active">
+                      <a href="/#rute" className="nav-link">
+                        Rute ke Lokasi
+                      </a>
+                    </li>
                   </ul>
                 </nav>
               </div>
